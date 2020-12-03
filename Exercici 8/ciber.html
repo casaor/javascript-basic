@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercici 8</title>
+
+</head>
+
+<body>
+    <h2>Exercici 8 Javascript (React M6)</h2>
+
+    <p>Crea una funció anomenada calculadora que tingui com a entrada els següents paràmetres: operador, valor1 i valor2. 
+        Estructura de la funció que faci sumes, restes i multiplicacions. El resultat haurà de ser mostrar per pantalla.</p>
+    
+    <hr>
+    <br>
+
+    <p>Introdueix un número</p>
+    <input type="text" id="valor1"/>
+    <br>
+
+    <p>Introdueix un altre número</p>
+    <input type="text" id="valor2"/>
+    <br>
+    <br>
+
+    <input type="Button" name="" value=" + " onclick="calculadora('+')">
+    <input type="Button" name="" value=" - " onclick="calculadora('-')">
+    <input type="Button" name="" value=" x " onclick="calculadora('*')">
+    <input type="Button" name="" value=" / " onclick="calculadora('/')">
+    <br>
+
+    <p id="res"></p>
+
+    <script>
+        function calculadora(operador){
+            let valor1 = Number(document.getElementById("valor1").value);
+            let valor2 = Number(document.getElementById("valor2").value);
+            let resultat = eval(valor1 + operador + valor2);
+            document.getElementById("res").innerHTML = resultat;
+        }
+    
+    </script>
+
+</body>
+
+</html>
