@@ -36,10 +36,10 @@
 
     <script>
         function calculadora(operador){
-            let valor1 = Number(document.getElementById("valor1").value);
-            let valor2 = Number(document.getElementById("valor2").value);
-            let resultat = eval(valor1 + operador + valor2);
-            document.getElementById("res").innerHTML = resultat;
+            //let valor1 = Number(document.getElementById("valor1").value);
+            //let valor2 = Number(document.getElementById("valor2").value);
+            let resultat = eval(Number(valor1.value) + operador + Number(valor2.value));
+            res.innerHTML = resultat;
         }
     
     </script>
