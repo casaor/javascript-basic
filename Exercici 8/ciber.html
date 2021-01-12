@@ -39,7 +39,11 @@
             //let valor1 = Number(document.getElementById("valor1").value);
             //let valor2 = Number(document.getElementById("valor2").value);
             let resultat = eval(Number(valor1.value) + operador + Number(valor2.value));
-            res.innerHTML = resultat;
+            
+            if (isFinite(resultat)) {
+                res.innerHTML = resultat;    
+            }
+            res.innerHTML = 'No es pot dividir per 0';
         }
     
     </script>
